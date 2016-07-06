@@ -11,18 +11,21 @@ Text Domain: olivia_macksolden_blog_template
 @import url("stylesheets/normalize.css");
 @import url("stylesheets/skeleton.css");
 
+
 html, body{
     color: #000000;
     font-size: 14px;
     line-height: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #999999;
-    font-weight: 700;
+h1, h2, h3, h4, h5, {
+    color: #000000;
+    font-family: 'Libre Baskerville', serif;
 }
+
 h1 {
     font-size: 3.0rem;
+    text-align: center;
 }
 h2 {
     font-size: 2.5rem;
@@ -36,23 +39,45 @@ h4{
 h5 {
     font-size: 0.2rem;
 }
+h6 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #BDB8AD;
 
+}
+#title {
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+    width: 55%;
+}
+#subtitle {
+  margin-top: -5px;
+  margin-bottom:
+}
 a {
-  color: red;
+  color: #000000;
   font-weight: 700;
   text-decoration: none;
 }
 /*--- Menu --- */
 
 .blank-menu-header {
+
     text-align: left;
-    margin-top: 40px;
+    background-color: #EBE7E0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #BDB8AD;
 }
 .blank-menu-header ul {
     margin: 0;
-    padding: 0;
+    padding-top: 18px;
     list-style-type: none;
     list-style-image: none;
+    font-family: 'Lato', sans-serif;
 }
 .blank-menu-header li {
     display: inline;
@@ -62,8 +87,4 @@ a {
     margin: 4px;
     padding: 5px 0px 5px 40px;
     font-weight: 300;
-    font-size: 1.1rem;
-}
-.blank-menu-header ul li a:hover {
-    color: #cccccc;
 }

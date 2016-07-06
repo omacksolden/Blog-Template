@@ -55,9 +55,11 @@ add_theme_support('menus');
 add_theme_support( 'post-thumbnails' );
 
 
-
-
-
+function load_fonts() {
+            wp_register_style('et-googleFonts', 'https://fonts.googleapis.com/css?family=Lato');
+            wp_enqueue_style( 'et-googleFonts');
+        }
+    add_action('wp_print_styles', 'load_fonts');
 
 
 
