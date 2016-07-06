@@ -20,7 +20,7 @@ html, body{
 
 h1, h2, h3, h4, h5, {
     color: #000000;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Georgia';
 }
 
 h1 {
@@ -50,6 +50,8 @@ h6 {
     padding-top: 100px;
     margin: auto;
     width: 55%;
+    font-family: 'Georgia';
+    font-weight: 300;
 }
 #subtitle {
   margin-top: -5px;
@@ -60,20 +62,23 @@ a {
   font-weight: 700;
   text-decoration: none;
 }
+
+a:hover {
+    color: #000000;
+}
 /*--- Menu --- */
 
+header {
+  background-color: #EBE7E0;
+  height: 50px;
+  width: 100%;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #BDB8AD;
+}
 .blank-menu-header {
-
-    text-align: left;
-    background-color: #EBE7E0;
-    height: 50px;
-    width: 100%;
-    border-bottom: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #BDB8AD;
 }
 .blank-menu-header ul {
-    margin: 0;
     padding-top: 18px;
     list-style-type: none;
     list-style-image: none;
@@ -83,8 +88,18 @@ a {
     display: inline;
 }
 .blank-menu-header ul li a {
+    width: 940px;
     text-decoration:none;
     margin: 4px;
     padding: 5px 0px 5px 40px;
     font-weight: 300;
+}
+
+footer {
+    background-color: #EBE7E0;
+    height: 100px;
+    width: 100%;
+    border-top: 3px;
+    border-top-style: solid;
+    border-top-color: #BDB8AD;
 }

@@ -4,6 +4,7 @@
          <section class="row">
               <div class="twelve columns">
                   <!-- Begin Loop -->
+                  <?php query_posts('showposts=4'); ?>
                   <?php
                       if ( have_posts() ) {
                           while ( have_posts() ) {
