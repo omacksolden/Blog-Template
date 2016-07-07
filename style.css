@@ -41,6 +41,10 @@ h6 {
     font-family: 'Lato', sans-serif;
     color: #BDB8AD;
 }
+#space {
+  height: 35px;
+}
+
 #post {
   position: relative;
   background-color: #FFFFFF;
@@ -54,7 +58,6 @@ h6 {
   -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
-
 #post-title {
   text-align: center;
   padding-left: 15px;
@@ -102,10 +105,10 @@ a:hover {
 }
 /*--- Menu --- */
 .wp-post-image {
-    margin-left: 70px;
     position: absolute;
+    display: inline-block;;
+    margin-left: 75px;
 }
-
 header {
   position: absolute;
   background-color: #EBE7E0;
@@ -115,11 +118,10 @@ header {
   border-bottom-style: solid;
   border-bottom-color: #BDB8AD;
 }
-.blank-menu-header {
-}
 .blank-menu-header ul {
   position: relative;
     padding-top: 18px;
+    padding-left: 25px;
     list-style-type: none;
     list-style-image: none;
     font-family: 'Lato', sans-serif;
@@ -134,7 +136,14 @@ header {
     padding: 5px 0px 5px 40px;
     font-weight: 300;
 }
-
+.attachment-large img {
+    margin: auto;
+    text-align: center;
+    margin-left: 75px;
+}
+#article-title h2 {
+    margin-top: 500px;
+}
 footer {
     background-color: #EBE7E0;
     height: 100px;
@@ -142,4 +151,5 @@ footer {
     border-top: 3px;
     border-top-style: solid;
     border-top-color: #BDB8AD;
+    display: block;
 }

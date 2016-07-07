@@ -2,8 +2,7 @@
 
     <!-- Begin Section Container -->
          <section class="row">
-              <div class="twelve-columns">
-                <div id="entire-post">
+              <div class="twelve columns">
                   <!-- Begin Loop -->
                   <?php query_posts('showposts=4'); ?>
                   <?php
@@ -20,14 +19,15 @@
                             <p id="date"><?php echo get_the_date(); ?></p>
                             <a href="<?php the_permalink(); ?>"><p id="readmore">READ MORE</a>
                             </div>
-                    </div>
+                    <div id="space"></div>
                     <?php
                         } //end while
                       } //end if
                   ?>
+                  </div>
                   <!-- End Loop -->
-              </div>
          </section>
+
      <!-- End Section Container -->
 
      <?php get_footer(); ?>
