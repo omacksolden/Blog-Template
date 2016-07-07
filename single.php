@@ -14,7 +14,7 @@
                           </div>
                          <?php } ?>
 
-                        <h2><?php the_title(); ?></h2>
+                        <h2 id="article-heading"><?php the_title(); ?></h2>
                         <?php the_content(); ?>
 
                 <?php

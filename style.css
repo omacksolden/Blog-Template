@@ -139,18 +139,30 @@ header {
     text-align: center;
     margin-left: 75px;
 }
-#article-title h2 {
+#article-heading h2 {
     margin-top: 500px;
 }
-section h2 {
+#article-heading {
   font-family: 'Georgia';
   padding-top: 465px;
   font-weight: 300;
   text-align: center;
   font-size: 40px;
 }
+#page-heading {
+  font-family: 'Georgia';
+  font-size: 40px;
+  text-align: center;
+}
+#page-content {
+    margin-left: 75px;
+}
 section p {
   font-family: 'Georgia';
+}
+#searchform {
+  padding-top: 7px;
+  float: right;
 }
 footer {
     background-color: #EBE7E0;
