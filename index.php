@@ -2,7 +2,8 @@
 
     <!-- Begin Section Container -->
          <section class="row">
-              <div class="twelve columns">
+              <div class="twelve-columns">
+                <div id="entire-post">
                   <!-- Begin Loop -->
                   <?php query_posts('showposts=4'); ?>
                   <?php
@@ -14,9 +15,12 @@
                               the_post_thumbnail('full');
                                 }
                             ?>
-                            <h5 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                            <a href="<?php the_permalink(); ?>">Read More</a>
-
+                            <div id="post">
+                            <p id="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                            <p id="date"><?php echo get_the_date(); ?></p>
+                            <a href="<?php the_permalink(); ?>"><p id="readmore">READ MORE</a>
+                            </div>
+                    </div>
                     <?php
                         } //end while
                       } //end if
