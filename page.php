@@ -2,7 +2,7 @@
 
 <!-- Begin Section Container -->
      <section class="row">
-          <div class="eight columns">
+          <div class="twelve columns">
             <div id="page-content">
               <!-- Begin Loop -->
               <?php
@@ -10,7 +10,6 @@
                       while ( have_posts() ) {
                         the_post(); ?>
 
-                        <h2 id="page-heading"><?php the_title(); ?></h2>
                         <?php the_content(); ?>
 
                 <?php
