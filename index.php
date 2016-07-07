@@ -11,11 +11,10 @@
                             the_post(); ?>
                             <?php
                             if ( has_post_thumbnail() ) {
-                              the_post_thumbnail('thumbnail');
+                              the_post_thumbnail('full');
                                 }
                             ?>
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <?php the_excerpt(); ?>
+                            <h5 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                             <a href="<?php the_permalink(); ?>">Read More</a>
 
                     <?php
